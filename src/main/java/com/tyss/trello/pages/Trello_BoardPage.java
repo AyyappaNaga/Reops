@@ -125,7 +125,7 @@ public class Trello_BoardPage {
 	private WebElement btnArchive;
 
 	/* Show menu button */
-	@FindBy(xpath = "//button[text()='Show menu']")
+	@FindBy(xpath = "//button[@aria-label='Show menu']")
 	private WebElement btnShowMenu;
 
 	/* More option */
