@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" name="Failed suite [Trello]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tyss.trello.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="PROJECT_Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.tyss.trello.scripts.TYSS_Trello_Demo">
+        <methods>
+          <include name="TC_TYSS_Trello_001" invocation-numbers="0"/>
+          <include name="killTask"/>
+          <include name="createFiles"/>
+          <include name="downloadDriverExecutables"/>
+          <include name="launchBrowser"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.tyss.trello.scripts.TYSS_Trello_Demo -->
+    </classes>
+  </test> <!-- PROJECT_Test1(failed) -->
+</suite> <!-- Failed suite [Trello] -->

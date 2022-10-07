@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [PokerBazi]">
+  <listeners>
+    <listener class-name="com.tyss.demo.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="2" name="PROJECT_Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.tyss.demo.scripts.modulename.Demo">
+        <methods>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="downloadDriverExecutables"/>
+          <include name="launchBrowser"/>
+          <include name="testDemo"/>
+          <include name="createFiles"/>
+          <include name="killTask"/>
+        </methods>
+      </class> <!-- com.tyss.demo.scripts.modulename.Demo -->
+    </classes>
+  </test> <!-- PROJECT_Test1(failed) -->
+</suite> <!-- Failed suite [PokerBazi] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Application Name]">
+  <listeners>
+    <listener class-name="com.tyss.demo.listeners.TestListener"/>
+  </listeners>
+  <test name="PROJECT_Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.tyss.demo.scripts.modulename.TYSS_ModuleName_010">
+        <methods>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="downloadDriverExecutables"/>
+          <include name="TC_TYSS_ModuleName_010" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="createFiles"/>
+          <include name="killTask"/>
+        </methods>
+      </class> <!-- com.tyss.demo.scripts.modulename.TYSS_ModuleName_010 -->
+    </classes>
+  </test> <!-- PROJECT_Test1(failed) -->
+</suite> <!-- Failed suite [Application Name] -->

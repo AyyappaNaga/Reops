@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Actitime]" parallel="tests">
+  <listeners>
+    <listener class-name="com.tyss.demo.listeners.TestListener"/>
+  </listeners>
+  <test name="POC_Test1(failed)" parallel="tests">
+    <parameter name="port" value="6687"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="com.tyss.demo.scripts.modulename.Demo">
+        <methods>
+          <include name="launchApp"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="testDemo"/>
+          <include name="createFiles"/>
+          <include name="killTask"/>
+        </methods>
+      </class> <!-- com.tyss.demo.scripts.modulename.Demo -->
+    </classes>
+  </test> <!-- POC_Test1(failed) -->
+  <test name="POC_Test2(failed)" parallel="tests">
+    <parameter name="port" value="6687"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.tyss.demo.scripts.modulename.Demo">
+        <methods>
+          <include name="launchApp"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="testDemo"/>
+          <include name="createFiles"/>
+          <include name="killTask"/>
+        </methods>
+      </class> <!-- com.tyss.demo.scripts.modulename.Demo -->
+    </classes>
+  </test> <!-- POC_Test2(failed) -->
+</suite> <!-- Failed suite [Actitime] -->

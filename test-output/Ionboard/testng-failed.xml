@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Ionboard]">
+  <test name="PROJECT_Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="LaunchBrowserDemo.LaunchBrowserDemo.AppTest">
+        <methods>
+          <include name="set"/>
+          <include name="close"/>
+          <include name="terminate"/>
+          <include name="main"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- LaunchBrowserDemo.LaunchBrowserDemo.AppTest -->
+    </classes>
+  </test> <!-- PROJECT_Test1(failed) -->
+</suite> <!-- Failed suite [Ionboard] -->
